@@ -1,6 +1,3 @@
-Perfect — since your project uses **Flask with a web-based GUI**, here’s an updated, comprehensive **README.md** tailored to your `app.py` setup. This version explains that it’s a web app, how to install, run, and use it, and how the endpoints work.
-
----
 
 # 🚨 ShadowScan – Dark Web Threat Intelligence Web App
 
