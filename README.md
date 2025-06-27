@@ -29,11 +29,8 @@ Tor running locally (default port 9150)
 Your existing requirements.txt
 
 Install Python dependencies:
-
-bash
-Copy
-Edit
 pip install -r requirements.txt
+
 ✅ Install Tor browser or Tor daemon and make sure it is running:
 
 Tor browser → Start it, wait until connected
@@ -42,17 +39,8 @@ Or start Tor daemon → tor
 
 🚀 Running the App
 After installing dependencies and ensuring Tor is running:
-
-bash
-Copy
-Edit
 python app.py
-You should see something like:
 
-csharp
-Copy
-Edit
- * Running on http://127.0.0.1:5000/
 Open your browser and go to http://127.0.0.1:5000/ to use the web interface.
 
 🖥 Web Interface
@@ -61,22 +49,6 @@ Enter .onion URLs (one per line) in the form.
 Click Scan to start scanning.
 
 Once finished, download the generated PDF report.
-
-🛠 API Endpoints
-GET /
-Serves the HTML GUI (index page).
-
-POST /scan
-Accepts JSON payload with a list of URLs:
-
-json
-Copy
-Edit
-{
-  "urls": "http://example1.onion\nhttp://example2.onion"
-}
-Returns JSON results including findings and report filename.
-
 GET /download/<filename>
 Downloads the generated PDF report.
 
@@ -88,13 +60,11 @@ scanner.py handles the scanning logic, Tor configuration, regex + NLP analysis, 
 app.py provides the web GUI and REST API.
 
 ⚠ Legal Disclaimer
-pgsql
-Copy
-Edit
 This tool is provided for educational and research purposes only.
 The developer assumes no liability for misuse or damages.
 The user is responsible for complying with applicable laws.
 Accessing dark web content may be illegal in some jurisdictions.
+
 📄 License
 MIT License (or your chosen license).
 
@@ -108,3 +78,5 @@ BeautifulSoup
 HuggingFace Transformers
 
 dbmdz BERT NER model
+
+✅ Ready to get started? Run python app.py and open http://127.0.0.1:5000/ in your browser!
