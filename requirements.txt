@@ -1,7 +1,17 @@
-requests[socks]
+# HTTP requests and Tor support
+requests
 beautifulsoup4
-fpdf2
+pysocks
+
+# PDF generation
+fpdf
+
+# NLP
 transformers
-scikit-learn
 torch
-Flask 
+
+# If using a Flask-based web interface (optional)
+flask
+
+# If you use lxml parser with BeautifulSoup for better speed (optional)
+lxml
