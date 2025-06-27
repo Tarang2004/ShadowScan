@@ -1,0 +1,7 @@
+requests[socks]
+beautifulsoup4
+fpdf2
+transformers
+scikit-learn
+torch
+Flask 
